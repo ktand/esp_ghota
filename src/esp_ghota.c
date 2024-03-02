@@ -596,6 +596,7 @@ esp_err_t ghota_update(ghota_client_handle_t *handle)
         .url = handle->result.url,
         .crt_bundle_attach = esp_crt_bundle_attach,
         .keep_alive_enable = true,
+        .buffer_size = 4096,
         .buffer_size_tx = 4096,
     };
 
